@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "左旋", "左旋\左旋.vcxproj", "{503613A7-A127-4F2F-9779-3088129CCA7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{503613A7-A127-4F2F-9779-3088129CCA7B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{503613A7-A127-4F2F-9779-3088129CCA7B}.Debug|Win32.Build.0 = Debug|Win32
+		{503613A7-A127-4F2F-9779-3088129CCA7B}.Release|Win32.ActiveCfg = Release|Win32
+		{503613A7-A127-4F2F-9779-3088129CCA7B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
