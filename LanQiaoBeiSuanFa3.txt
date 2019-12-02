@@ -1,0 +1,48 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lanqiaobeisuanfa3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author lenovo
+ */
+public class LanQiaoBeiSuanFa3 {
+    final static int MOD= 10000007;
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input=new Scanner(System.in);
+        int k=input.nextInt();
+        int l=input.nextInt();
+        int [][]a=new int[101][101];
+        for(int i=0;i<k;i++)
+        {
+            a[1][i]=1;
+        }
+        for(int j=2;j<=l;j++)
+        {
+            for(int m=0;m<k;m++)
+            {
+                for(int n=0;n<k;n++)
+                {
+                    if(n!=m-1&&n!=m+1)
+                    {
+                        a[j][m]+=a[j-1][n];
+                        a[j][m]%=MOD;
+                    }
+                }
+            }
+        }
+       long sum=0;
+       for(int s=1;s<k;s++)
+       {
+           sum+=a[l][s];
+           sum%=MOD;
+       }
+       System.out.println(sum);
+    }
+}
